@@ -76,4 +76,22 @@ public class LabelC {
         labelService.deleteById(id);
         return new Result(true, StatusCode.OK,"删除成功！");
     }
+    /***
+     * /label/search
+     * 根据条件查询标签列表
+     */
+    @RequestMapping(value = "/search",method = RequestMethod.POST)
+    public Result findSearch(@RequestBody Label label){
+        List<Label> labels =  labelService.findSearch(label);
+        return new Result(true,StatusCode.OK,"查询成功",labels);
+    }
+    /***
+     * /label/search
+     * 根据条件查询标签列表 分页
+     */
+    @RequestMapping(value = "/findSearchPage/{page}/{size}",method = RequestMethod.POST)
+    public Result findSearchPage(@RequestBody Label label,@PathVariable Integer page,@PathVariable  Integer size){
+
+        return new Result(true,StatusCode.OK,"查询成功",   labelService.findSearchPage(label,page,size));
+    }
 }
