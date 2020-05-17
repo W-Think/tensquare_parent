@@ -88,6 +88,7 @@ public class LabelC {
     /***
      * /label/search
      * 根据条件查询标签列表 分页
+     *
      */
     @RequestMapping(value = "/findSearchPage/{page}/{size}",method = RequestMethod.POST)
     public Result findSearchPage(@RequestBody Label label,@PathVariable Integer page,@PathVariable  Integer size){
