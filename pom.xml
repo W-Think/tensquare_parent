@@ -5,6 +5,8 @@
     <modules>
         <module>tensquare_common</module>
         <module>tensquare_base</module>
+        <module>tensquare_gathering</module>
+        <module>tensquare_recruit</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

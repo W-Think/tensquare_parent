@@ -3,11 +3,11 @@ package com.wthink.tensquare_common.entity;
 import java.util.List;
 
 /**
- * @描述:
+ * @描述:分页的数据模型
  * @作者:wangshuai
  * @时间:2020/5/8 10:53
  */
-public class PageResult<T> {
+public class PageResult<T>{
     private Long total;
     private List<T> rows;
 
@@ -16,5 +16,20 @@ public class PageResult<T> {
         this.total = total;
         this.rows = rows;
     }
-    // getter and setter ....
+
+    public Long getTotal() {
+        return total;
+    }
+
+    public void setTotal(Long total) {
+        this.total = total;
+    }
+
+    public List<T> getRows() {
+        return rows;
+    }
+
+    public void setRows(List<T> rows) {
+        this.rows = rows;
+    }
 }
