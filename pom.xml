@@ -7,6 +7,8 @@
         <module>tensquare_base</module>
         <module>tensquare_gathering</module>
         <module>tensquare_recruit</module>
+        <module>tensquare_article</module>
+        <module>tensquare_gathering2</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
