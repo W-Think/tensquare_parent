@@ -1,0 +1,15 @@
+server:
+  port: 9006
+
+spring:
+  main:
+    allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
+  application:
+    name: tensquare-spit
+
+  data:
+    mongodb:
+      host: 127.0.0.1
+      database: spitdb
+  redis:
+    host: 127.0.0.1
